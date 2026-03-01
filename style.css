@@ -1,0 +1,170 @@
+/* Import Font Modern 'Poppins' */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Latar belakang halaman dengan Gradasi Hitam ke Biru Gelap */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #000000 0%, #081229 50%, #0a192f 100%);
+    color: #e2e8f0; /* Teks abu-abu terang agar nyaman dibaca di latar gelap */
+}
+
+/* Kotak utama (Card Layout Dark Theme) */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #0d1117; /* Hitam pekat */
+    padding: 50px;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0, 102, 255, 0.15); /* Bayangan biru halus di luar kotak */
+    border: 1px solid #1e3a8a; /* Garis tepi biru gelap */
+}
+
+/* Judul Utama menyala Biru Terang */
+h1 {
+    color: #3b82f6; 
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+/* Garis horizontal biru bercahaya */
+hr {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #3b82f6, transparent);
+    margin-bottom: 35px;
+    opacity: 0.8;
+}
+
+/* Foto profil dengan efek cahaya (Glow) biru di sekitarnya */
+.profile-img {
+    display: block;
+    margin: 0 auto 25px auto;
+    border-radius: 50%;
+    border: 4px solid #1e3a8a;
+    box-shadow: 0 0 25px rgba(59, 130, 246, 0.4); 
+    object-fit: cover;
+    height: 160px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Efek menyala lebih terang saat foto disorot mouse */
+.profile-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 35px rgba(59, 130, 246, 0.8);
+}
+
+/* KOTAK PEMISAH (Section Box) di mode gelap */
+.section-box {
+    background-color: #161b22; /* Abu-abu kehitaman */
+    border: 1px solid #1f2937;
+    border-radius: 12px;
+    padding: 25px 30px;
+    margin-bottom: 25px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Kotak menyala biru saat disorot */
+.section-box:hover {
+    border-color: #3b82f6; 
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.15);
+}
+
+/* Kotak khusus tautan dengan garis putus-putus biru */
+.link-box {
+    background-color: transparent;
+    border: 1px dashed #3b82f6;
+}
+
+/* Judul di dalam kotak pemisah (Biru Muda) */
+.section-title {
+    color: #60a5fa; 
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #1f2937;
+    display: block;
+    font-weight: 600;
+}
+
+p {
+    line-height: 1.8;
+    color: #94a3b8;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Memaksa warna tag <font> bawaan HTML berubah terang agar tidak tenggelam di latar hitam */
+font {
+    color: #e2e8f0 !important; 
+    font-family: 'Poppins', sans-serif !important;
+}
+
+/* Penyesuaian tag format dokumen agar terbaca jelas */
+b, i, u {
+    color: #e2e8f0;
+}
+
+/* Penyesuaian Preformatted Text (Kotak Data Diri) */
+pre {
+    background-color: #0d1117;
+    border-left: 4px solid #3b82f6;
+    padding: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14.5px;
+    color: #60a5fa; /* Teks data diri warna biru muda */
+    overflow-x: auto;
+    margin: 0;
+    border-radius: 0 8px 8px 0;
+}
+
+/* Penyesuaian Blockquote (Motivasi) */
+blockquote {
+    border-left: 4px solid #3b82f6;
+    margin: 10px 0 0 0;
+    padding: 15px 25px;
+    font-style: italic;
+    color: #bfdbfe;
+    background-color: rgba(59, 130, 246, 0.05); /* Latar biru transparan halus */
+    border-radius: 4px 12px 12px 4px;
+    font-size: 16px;
+}
+
+/* Penyesuaian Daftar (List) */
+ul {
+    margin: 0;
+    padding: 0 0 0 25px;
+}
+
+li {
+    margin-bottom: 10px;
+    color: #94a3b8;
+    line-height: 1.6;
+}
+
+/* Tombol Tautan (Link Button) */
+a {
+    display: inline-block;
+    background-color: #3b82f6; 
+    color: #ffffff !important;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 12px 30px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+a:hover {
+    background-color: #2563eb; 
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.6);
+}
